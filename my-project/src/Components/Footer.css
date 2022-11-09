@@ -1,0 +1,11 @@
+
+.icon {
+    font-size: 6vmin;
+    margin: 1.5vmin;
+    color: #F3D8C7;
+    transition: 150ms;
+}
+
+.icon:hover {
+    color: #EF626C;
+}
