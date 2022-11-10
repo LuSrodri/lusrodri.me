@@ -8,6 +8,7 @@ const divStyle = {
     paddingTop: '5vmin',
     paddingBottom: '2.5vmin',
     borderBottom: '1vmin solid #EF626C',
+    width: '100%',
 };
 
 const titleStyle = {
@@ -16,19 +17,12 @@ const titleStyle = {
     fontWeight: 'bolder',
 };
 
-let index = 0;
-
 export class Home extends React.Component {
     technologies = ['WEB', 'HTML', 'CSS', 'JavaScript', 'Node.js', 'React.js', 'ASP.NET'];
 
-    constructor(props) {
-        super(props);
-        this.state = { technology: 'Front-end_' };
-    }
-
     render() {
         return (
-            <div className="home w-100" style={divStyle}>
+            <div className="home" style={divStyle}>
                 <h1 style={titleStyle}>LUSRODRI</h1>
                 <h4>Eu sou Lucas Santos Rodrigues, desenvolvedor <Typed
                     typedRef={(typed) => { this.typed = typed; }}

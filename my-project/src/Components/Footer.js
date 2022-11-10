@@ -9,17 +9,19 @@ const divStyle = {
     paddingTop: '5vmin',
     paddingBottom: '2.5vmin',
     borderTop: '1vmin solid #EF626C',
+    width: '100%',
 };
 
 
 export function Footer() {
     return (
-        <div className="home w-100" style={divStyle}>
+        <div className="home" style={divStyle}>
             <h4>Siga-me nas redes sociais!</h4>
             <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <a href="https://www.linkedin.com/in/lucas-santos-rodrigues/"><i class="bi bi-linkedin icon"></i></a>
-                <a href="https://github.com/lusrodri"><i class="bi bi-github icon"></i></a>
+                <a href="https://www.linkedin.com/in/lucas-santos-rodrigues/"><i className="bi bi-linkedin icon"></i></a>
+                <a href="https://github.com/lusrodri"><i className="bi bi-github icon"></i></a>
             </div>
+            <h4><a href="https://github.com/LuSrodri/lusrodri.me">Acesse o repositório.</a></h4>
         </div>
     );
 }
