@@ -1,0 +1,44 @@
+
+.divCard {
+    width: 55vmin;
+    height: 55vmin;
+    background-color: #EF626C;
+    border: 1vmin solid #1C3144;
+    border-radius: 5vmin;
+    margin: 2.5vmin;
+    padding: 2vmin;
+    transition: 150ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divCard:hover {
+    cursor: pointer;
+    box-shadow: 1vmin 1vmin #2892D7;
+}
+
+.divCard  img {
+    width: 100%;
+    margin-bottom: 3vmin;
+    border: 1vmin solid #1C3144;
+}
+
+.divCard h2, .divCard h5, .divCard p, .divCard h4 {
+    font-weight: bolder;
+    color: #1C3144;
+    text-transform: uppercase;
+}
+
+.divCard  p {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .divCard {
+        width: 110vmin;
+        height: 110vmin;
+        border-width: 2vmin;
+    }
+}
