@@ -2,21 +2,7 @@ import React, { Component } from "react";
 import { Card } from './Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './Data/projects.json';
-
-const divStyle = {
-    color: 'black',
-    paddingTop: '5vmin',
-    paddingBottom: '2.5vmin',
-};
-
-const cardsStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    margin: '3vmin 0',
-    width: '90%',
-};
+import './Styles/Projects.css';
 
 export class Projects extends React.Component {
     constructor(props) {
@@ -37,9 +23,9 @@ export class Projects extends React.Component {
 
     render() {
         return (
-            <div className="home w-100" style={divStyle}>
+            <div className="home divProjects">
                 <h1 style={{ fontWeight: 'bolder', color: '#1C3144' }}>PROJETOS</h1>
-                <div style={cardsStyle}>
+                <div className="divCards">
                     {this.state.cards}
                 </div>
             </div>

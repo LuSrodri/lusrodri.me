@@ -7,13 +7,70 @@ body {
   background-color: #F3D8C7 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bolder;
-}
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+h1.title {
+  font-size: 10vmin;
+  color: #EF626C;
+  font-weight: bolder;
+}
+
+h4.text,
+h5.text {
+  color: #F3D8C7;
+  text-transform: none;
+}
+
+h4.text {
+  font-size: 4vmin;
+}
+
+h5.text {
+  font-size: 3vmin;
+}
+
+a.icon,
+h4.text a,
+h5.text a {
+  color: #EF626C;
+  text-decoration: none;
+  transition: 150ms;
+}
+
+a.icon {
+  font-size: 6vmin;
+  margin: 2.5vmin;
+  margin-top: 0;
+  transition: 150ms;
+}
+
+h4.text a:hover,
+h5.text a:hover,
+a.icon:hover {
+  color: #2892D7;
+}
+
+hr.horizontalLRow {
+  width: 75%;
+  border-top: 0.5vmin solid #F3D8C7;
+  opacity: unset;
+}
+
+@media (max-width: 500px) {
+  h4.text {
+    font-size: 5vmin;
+  }
+
+  h5.text {
+    font-size: 4vmin;
+  }
+
+  a.icon {
+    font-size: 9vmin;
+  }
 }

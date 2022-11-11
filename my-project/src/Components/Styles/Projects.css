@@ -1,0 +1,13 @@
+
+.divProjects {
+    width: 100%;
+    padding: 4vmin 0;
+}
+
+.divCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+}

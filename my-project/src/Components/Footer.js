@@ -1,27 +1,20 @@
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './Footer.css';
-
-const divStyle = {
-    backgroundColor: '#1C3144',
-    color: '#F3D8C7',
-    paddingTop: '5vmin',
-    paddingBottom: '2.5vmin',
-    borderTop: '1vmin solid #EF626C',
-    width: '100%',
-};
-
+import './Styles/Footer.css';
 
 export function Footer() {
     return (
-        <div className="home" style={divStyle}>
-            <h4>Siga-me nas redes sociais!</h4>
-            <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <a href="https://www.linkedin.com/in/lucas-santos-rodrigues/"><i className="bi bi-linkedin icon"></i></a>
-                <a href="https://github.com/lusrodri"><i className="bi bi-github icon"></i></a>
+        <div className="home divFooter">
+            <h5 className="text" style={{marginBottom: '0'}}><a href="https://github.com/LuSrodri/lusrodri.me">Clique aqui para acessar o repositório.</a></h5>
+            <hr className="horizontalLRow"></hr>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <h5 className="text" >Siga-me nas redes sociais!</h5>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', }}>
+                    <a className="icon" href="https://www.linkedin.com/in/lucas-santos-rodrigues/"><i className="bi bi-linkedin"></i></a>
+                    <a className="icon" href="https://github.com/lusrodri"><i className="bi bi-github"></i></a>
+                </div>
             </div>
-            <h4><a href="https://github.com/LuSrodri/lusrodri.me">Acesse o repositório.</a></h4>
         </div>
     );
 }

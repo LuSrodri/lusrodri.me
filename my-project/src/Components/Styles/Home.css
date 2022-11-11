@@ -1,0 +1,10 @@
+
+.divHome {
+    background-color: #1C3144;
+    color: #F3D8C7;
+    padding: 10vmin;
+    padding-top: 5vmin;
+    padding-bottom: 2.5vmin;
+    border-bottom: 1vmin solid #EF626C;
+    width: 100%;
+}
