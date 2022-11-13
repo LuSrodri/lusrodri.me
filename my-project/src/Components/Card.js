@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Styles/Card.css';
+import { Dialog } from './Dialog';
 
 export class Card extends React.Component {
     constructor(props) {
@@ -28,28 +29,53 @@ export class Card extends React.Component {
             this.setState({ type: 'Repositório' });
     }
 
-    render() {
+    openDialog(e) {
+        document.getElementById(this.props.id + 'Dialog').showModal();
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    }
 
+    render() {
         if (this.props.img == '')
             return (
-                <div className="divCard">
-                    <div>
-                        <h2>{this.props.title}</h2>
-                        <p>{this.state.tagsElement}</p>
+                <>
+                    <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
+                        <div>
+                            <h2>{this.props.title}</h2>
+                            <p>{this.state.tagsElement}</p>
+                        </div>
+                        <h4>Clique e veja mais sobre esse {this.state.type}!</h4>
                     </div>
-                    <h4>Clique e veja mais sobre esse {this.state.type}!</h4>
-                </div>
+                    <Dialog
+                        id={this.props.id + 'Dialog'}
+                        img={this.props.img}
+                        title={this.props.title}
+                        tags={this.props.tags}
+                        type={this.state.type}
+                        description={this.props.description}
+                        url={this.props.url}>
+                    </Dialog>
+                </>
             );
         else
             return (
-                <div className="divCard">
-                    <img src={this.props.img} />
-                    <div>
-                        <h2>{this.props.title}</h2>
-                        <p>{this.state.tagsElement}</p>
+                <>
+                    <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
+                        <img src={this.props.img} />
+                        <div>
+                            <h2>{this.props.title}</h2>
+                            <p>{this.state.tagsElement}</p>
+                        </div>
                     </div>
-                </div>
+                    <Dialog
+                        id={this.props.id + 'Dialog'}
+                        img={this.props.img}
+                        title={this.props.title}
+                        tags={this.props.tags}
+                        type={this.state.type}
+                        description={this.props.description}
+                        url={this.props.url}>
+                    </Dialog>
+                </>
             );
-
     }
 }

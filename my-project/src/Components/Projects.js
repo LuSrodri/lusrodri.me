@@ -14,10 +14,13 @@ export class Projects extends React.Component {
         for (let i = 0; i < this.state.projects.length; i++) {
             this.state.cards.push(
                     <Card key={i}
+                        id={'card' + i}
                         img={this.state.projects[i].image}
                         title={this.state.projects[i].name}
                         tags={this.state.projects[i].tags}
-                        type={this.state.projects[i].type} />)
+                        type={this.state.projects[i].type}
+                        description={this.state.projects[i].description} 
+                        url={this.state.projects[i].url}/>)
         }
     }
 
