@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card } from './Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './Data/projects.json';

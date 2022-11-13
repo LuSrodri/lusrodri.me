@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './Styles/Card.css';
 import { Dialog } from './Dialog';
 
@@ -23,9 +23,9 @@ export class Card extends React.Component {
     }
 
     componentDidMount() {
-        if (this.props.type == 'site')
+        if (this.props.type === 'site')
             this.setState({ type: 'WebSite' });
-        else if (this.props.type == 'repo')
+        else if (this.props.type === 'repo')
             this.setState({ type: 'Repositório' });
     }
 
@@ -35,7 +35,7 @@ export class Card extends React.Component {
     }
 
     render() {
-        if (this.props.img == '')
+        if (this.props.img === '')
             return (
                 <>
                     <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
@@ -60,7 +60,7 @@ export class Card extends React.Component {
             return (
                 <>
                     <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
-                        <img src={this.props.img} />
+                        <img src={this.props.img} alt=""/>
                         <div>
                             <h2>{this.props.title}</h2>
                             <p>{this.state.tagsElement}</p>

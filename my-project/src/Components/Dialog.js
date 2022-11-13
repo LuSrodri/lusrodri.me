@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './Styles/Dialog.css'
 
 export class Dialog extends React.Component {
@@ -16,7 +16,7 @@ export class Dialog extends React.Component {
                 this.state.tagsElement.push((<span key={i}>{this.props.tags[i]}<span style={{ color: '#1C3144' }}>, </span></span>));
         }
 
-        if (this.props.type == 'WebSite')
+        if (this.props.type === 'WebSite')
             this.state.type = 'Website';
         else
             this.state.type = 'Repositório';
@@ -35,7 +35,7 @@ export class Dialog extends React.Component {
 
     componentDidMount(e) {
         document.getElementById(this.props.id).addEventListener('click', e => {
-            if (e.target.id == this.props.id) {
+            if (e.target.id === this.props.id) {
                 this.closeModal(e);
             }
         });
