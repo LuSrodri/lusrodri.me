@@ -20,13 +20,11 @@ export class Card extends React.Component {
             else
                 this.state.tagsElement = this.state.tagsElement += this.props.tags[i] + ', ';
         }
-    }
 
-    componentDidMount() {
-        if (this.props.type === 'site')
-            this.setState({ type: 'WebSite' });
-        else if (this.props.type === 'repo')
-            this.setState({ type: 'Repositório' });
+        if (this.props.type === "site")
+            this.state.type = 'WebSite';
+        else if (this.props.type === "repo")
+            this.state.type = 'Repositório'
     }
 
     openDialog(e) {
@@ -60,7 +58,7 @@ export class Card extends React.Component {
             return (
                 <>
                     <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
-                        <img src={this.props.img} alt=""/>
+                        <img src={this.props.img} alt="" />
                         <div>
                             <h2>{this.props.title}</h2>
                             <p>{this.state.tagsElement}</p>
