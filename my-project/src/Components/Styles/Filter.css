@@ -1,0 +1,79 @@
+
+div.divFilters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 1vmin 0;
+}
+
+div.divFilters button {
+    margin: 0.5vmin;
+    padding: 1vmin 2vmin;
+    border-radius: 10vmin;
+    transition: 150ms;
+}
+
+div.divFilters button.btn.btn-info {
+    background-color: #2892D7;
+    border: 0.3vmin solid #6daedb;
+}
+
+div.divFilters button.btn.btn-info:hover {
+    background-color: #6daedb;
+}
+
+div.divFilters button.btn.btn-info:active {
+    background-color: #2892D7;
+    border: 0.3vmin solid #2892D7;
+}
+
+div.divFilters button.btn.btn-info.clear {
+    background-color: #395E7A;
+    border: unset;
+}
+
+div.divFilters button.btn.btn-info.clear:hover {
+    background-color: #1C3144;
+}
+
+div.divFilters button.btn.btn-info.clear:active {
+    background-color: #1C3144;
+}
+
+div.divFilters button.btn.btn-info.clicked {
+    background-color: #EF626C;
+    border: 0.3vmin solid #EF626C80;
+}
+
+div.divFilters button.btn.btn-info.clicked:hover {
+    background-color: #EF626C80;
+}
+
+div.divFilters button.btn.btn-info.clicked:active {
+    background-color: #EF626C;
+    border: 0.3vmin solid #EF626C;
+}
+
+div.divFilters h4.text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    div.divFilters h4.text {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 500px) {
+    div.divFilters h4.text {
+        font-size: 1rem;
+    }
+    div.divFilters button {
+        padding: 1.5vmin 3vmin;
+    }
+}
