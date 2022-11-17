@@ -3,7 +3,7 @@
         {
             "id": "1",
             "name": "Blocks' Fall",
-            "description": "Blocks' Fall é um jogo com inspiração no Tetris, onde você pode jogar no PC ou Mobile: blocksfall.io. Este projeto está em desenvolvimento, e utilizo HTML, CSS, JavaScript para frontend e Node.js com Express.js para backend. Também utilizo os conceitos do Flexbox para o Design responsivo. E eu uso o Google Cloud com Cloud Run para hospedagem.",
+            "description": "Blocks' Fall é um jogo com inspiração no Tetris, onde você pode jogar no PC ou Mobile: blocksfall.io. Este projeto está em desenvolvimento, e utilizo HTML, CSS, JavaScript para frontend e Node.JS com Express.JS para backend. Também utilizo os conceitos do Flexbox para o Design responsivo. E eu uso o Google Cloud com Cloud Run para hospedagem.",
             "type": "site",
             "url": "https://blocksfall.io",
             "image": "",
@@ -11,17 +11,15 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "Node.js",
-                "Express.js",
-                "Flexbox",
-                "Google Cloud",
-                "Cloud Run"
+                "Node.JS",
+                "Express.JS",
+                "Google Cloud"
             ]
         },
         {
             "id": "2",
             "name": "Smart Hotel",
-            "description": "O Smart Hotel é uma aplicação em desenvolvimento usando HTML, CSS e JS para o front-end e Node.js com Express.JS para o back-end. Ele usa o conceito de Progressive Web Apps onde o usuário pode baixar a aplicação no próprio dispositivo, como um aparelho Android ou Iphone. O próposito do serviço é ser um agregador de acomodações únicas e extraordinárias presentes ao redor do globo.",
+            "description": "O Smart Hotel é uma aplicação em desenvolvimento usando HTML, CSS e JS para o front-end e Node.JS com Express.JS para o back-end. Ele usa o conceito de Progressive Web Apps onde o usuário pode baixar a aplicação no próprio dispositivo, como um aparelho Android ou Iphone. O próposito do serviço é ser um agregador de acomodações únicas e extraordinárias presentes ao redor do globo.",
             "type": "repo",
             "url": "https://github.com/LuSrodri/PA-VII---Smart-Hotel",
             "image": "",
@@ -29,8 +27,8 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "Node.js",
-                "Express.js",
+                "Node.JS",
+                "Express.JS",
                 "PWA"
             ]
         },
@@ -45,13 +43,7 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "React",
-                "Redux",
-                "Hooks",
-                "React Router",
-                "Context API",
-                "Direct Communication",
-                "Indirect Communication"
+                "React.JS"
             ]
         },
         {
@@ -65,8 +57,8 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "Node.js",
-                "Express.js",
+                "Node.JS",
+                "Express.JS",
                 "WebSocket"
             ]
         },
@@ -82,8 +74,6 @@
                 "CSS",
                 "JavaScript",
                 "Vue",
-                "Vuex",
-                "Router",
                 "Axios"
             ]
         },
@@ -98,7 +88,7 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "React",
+                "React.JS",
                 "Spring Boot",
                 "Java",
                 "PostgreeSQL"
