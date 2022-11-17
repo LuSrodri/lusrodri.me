@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 import './Styles/Home.css';
 
 export class Home extends React.Component {
-    technologies = ['WEB', 'HTML', 'CSS', 'JavaScript', 'Node.js', 'React.js', 'ASP.NET'];
+    technologies = ['WEB', 'HTML', 'CSS', 'JavaScript', 'Node.JS', 'React.JS', 'ASP.NET'];
 
     render() {
         return (
