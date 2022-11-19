@@ -19,7 +19,7 @@ export class Home extends React.Component {
                     loop
                     style={{fontWeight: 'bolder'}}
                     /></h4>
-                <h4 className="text">Seja bem-vindo ao meu portfolio.</h4>
+                <h4 className="text">Seja bem-vindo ao meu portfólio.</h4>
             </div>
         );
     }
