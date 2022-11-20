@@ -1,23 +1,31 @@
 import React from "react";
 import { Card } from './Card';
 import { Filter } from './Filter';
+import { getProjectsFromDatabase } from './Data/database';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import data from './Data/projects.json';
 import './Styles/Projects.css';
 
 export class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            projects: data.projects,
+            projects: [],
             filteredProjectsByType: [],
             filteredProjectsByTags: [],
-            filteredProjects: data.projects,
+            filteredProjects: [],
         };
-        this.state.cards = this.mountCards(data.projects);
+        this.state.cards = [];
         this.handleFilterTypeChange = this.handleFilterTypeChange.bind(this);
         this.handleFilterTagsChange = this.handleFilterTagsChange.bind(this);
         this.handleSelectedFilterTagsChange = this.handleSelectedFilterTagsChange.bind(this);
+    }
+
+    async componentDidMount() {
+        getProjectsFromDatabase().then(result => {
+            this.setState({ projects: result });
+            this.setState({ filteredProjects: result });
+            this.setState({ cards: this.mountCards(result) });
+        });
     }
 
     mountCards(projects) {
@@ -73,24 +81,24 @@ export class Projects extends React.Component {
             await this.setState({ filteredProjectsByType: this.state.projects });
             await this.setState({ filteredProjects: this.state.filteredProjectsByType });
             this.setState({ filterTags: [] });
-            await this.setState({ cards: []});
+            await this.setState({ cards: [] });
             await this.setState({ cards: this.mountCards(this.state.filteredProjects) });
             return;
         }
         await this.setState({ filteredProjectsByType: this.state.projects.filter(project => project.type === this.state.filterType) });
         await this.setState({ filteredProjects: this.state.filteredProjectsByType });
-        await this.setState({ cards: []});
+        await this.setState({ cards: [] });
         await this.setState({ cards: this.mountCards(this.state.filteredProjects) });
 
         if (filter.size === 0) {
             await this.setState({ filteredProjectsByTags: this.state.filteredProjectsByType });
             await this.setState({ filteredProjects: this.state.filteredProjectsByTags });
-            await this.setState({ cards: []});
+            await this.setState({ cards: [] });
             await this.setState({ cards: this.mountCards(this.state.filteredProjects) });
             return;
         }
         let resultByTagsFilter = [];
-        for (let i = 0; i<this.state.filteredProjectsByType.length; i++) {
+        for (let i = 0; i < this.state.filteredProjectsByType.length; i++) {
             let count = 0;
             for (let item of filter) {
                 if (this.state.filteredProjectsByType[i].tags.includes(item)) {
@@ -104,7 +112,7 @@ export class Projects extends React.Component {
 
         await this.setState({ filteredProjectsByTags: resultByTagsFilter });
         await this.setState({ filteredProjects: this.state.filteredProjectsByTags });
-        await this.setState({ cards: []});
+        await this.setState({ cards: [] });
         await this.setState({ cards: this.mountCards(this.state.filteredProjects) });
     }
 
