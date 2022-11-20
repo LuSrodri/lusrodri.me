@@ -4,29 +4,33 @@ import { getFirestore, doc, getDoc } from "firebase/firestore";
 import data from './projects.json';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBhm3-O5eyzJZvtQal3HYjWDsIm7VwGPh4",
-    authDomain: "lusrodri.firebaseapp.com",
-    projectId: "lusrodri",
-    storageBucket: "lusrodri.appspot.com",
-    messagingSenderId: "856048279195",
-    appId: "1:856048279195:web:ea7eb8ca091066468db03e",
-    measurementId: "G-R42675SRD9"
+    apiKey: process.env.REACT_APP_APIKEY || "",
+    authDomain: process.env.REACT_APP_AUTHDOMAIN || "",
+    projectId: process.env.REACT_APP_PROJECTID || "",
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET || "",
+    messagingSenderId: process.env.REACT_APP_MESSAGESENDERID || "",
+    appId: process.env.REACT_APP_APPID || "",
+    measurementId: process.env.REACT_APP_MEASUREMENTID || ""
 };
 
 export async function getProjectsFromDatabase() {
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
 
-    const docRef = doc(db, "lusrodri", process.env.REACT_APP_USER_DATABASE);
-    const docSnap = await getDoc(docRef);
+    try {
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
 
-    if (docSnap.exists()) {
-        let dataResult = await docSnap.data().projects;
-        //console.log("Document getted from database successfully!");
-        return dataResult;
-    } else {
-        //console.log("Document getted from local file successfully!");
+        const docRef = doc(db, "lusrodri", process.env.REACT_APP_USER_DATABASE);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            let dataResult = await docSnap.data().projects;
+            // console.log("Document getted from database successfully!");
+            return dataResult;
+        }
+        // console.log("Document getted from local file successfully!");
+        return data.projects;
+    } catch (error) {
+        // console.log("Error getting document:", error);
         return data.projects;
     }
 }
