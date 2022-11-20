@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "firebase": "^9.14.0"
+    "firebase-admin": "^11.3.0"
   }
 }
