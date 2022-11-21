@@ -4,22 +4,19 @@ const data = require('./projects.json');
 
 
 async function addProjectsToDatabase() {
-    // Initialize Firebase
-    initializeApp({
-        credential: applicationDefault()
-    });
-    const db = getFirestore();
-
-    const docRef = db.collection('lusrodri').doc(process.env.USER_DATABASE);
-
     try {
+        initializeApp({
+            credential: applicationDefault()
+        });
+        const db = getFirestore();
+        const docRef = db.collection('lusrodri').doc(process.env.USER_DATABASE);
         await docRef.set({
             projects: data.projects
         });
 
         console.log("Document writted successfully!");
     } catch (e) {
-        console.error("Error adding document: ", e);
+        console.error("Occurred an error: ", e);
     }
 }
 
