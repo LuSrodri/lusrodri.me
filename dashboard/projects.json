@@ -1,12 +1,9 @@
 {
     "projects": [
         {
-            "id": "1",
-            "name": "Blocks' Fall",
-            "description": "Blocks' Fall é um jogo com inspiração no Tetris, onde você pode jogar no PC ou Mobile: blocksfall.io. Este projeto está em desenvolvimento, e utilizo HTML, CSS, JavaScript para frontend e Node.JS com Express.JS para backend. Também utilizo os conceitos do Flexbox para o Design responsivo. E eu uso o Google Cloud com Cloud Run para hospedagem.",
-            "type": "site",
-            "url": "https://blocksfall.io",
-            "image": "",
+            "description": "Um website com ferramentas para manipular e obter informações de imagens.",
+            "url": "https://imagesinfos.com",
+            "image": "https://storage.googleapis.com/lusrodrime/imagesinfos.png",
             "tags": [
                 "HTML",
                 "CSS",
@@ -14,15 +11,67 @@
                 "Node.JS",
                 "Express.JS",
                 "Google Cloud"
-            ]
+            ],
+            "id": "1",
+            "name": "Images Infos",
+            "type": "site"
         },
         {
-            "id": "2",
-            "name": "Smart Hotel",
-            "description": "O Smart Hotel é uma aplicação em desenvolvimento usando HTML, CSS e JS para o front-end e Node.JS com Express.JS para o back-end. Ele usa o conceito de Progressive Web Apps onde o usuário pode baixar a aplicação no próprio dispositivo, como um aparelho Android ou Iphone. O próposito do serviço é ser um agregador de acomodações únicas e extraordinárias presentes ao redor do globo.",
-            "type": "repo",
-            "url": "https://github.com/LuSrodri/PA-VII---Smart-Hotel",
+            "description": "Esse documento foi criado com o intuito de servir como um guia rápido para os principais conceitos e comandos do GIT.",
+            "url": "https://github.com/LuSrodri/GIT",
             "image": "",
+            "tags": [
+                "GIT"
+            ],
+            "id": "2",
+            "name": "Resumo sobre GIT e comandos importantes",
+            "type": "repo"
+        },
+        {
+            "url": "https://github.com/lusrodri/color",
+            "id": "3",
+            "type": "repo",
+            "name": "Paleta de cores",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Python",
+                "Flask"
+            ],
+            "image": "https://github.com/LuSrodri/color/raw/main/demo.gif",
+            "description": "Um código desenvolvido para usar a biblioteca extcolors para Python para extrair uma paleta de cores de uma imagem e mostrar o resultado em uma página. Também tem a opção de remover uma cor da paleta de cores da imagem para mostrar a importância de cada cor presente na imagem."
+        },
+        {
+            "description": "Um aplicativo WEB de exemplo de uma página de uma pizzaria desenvolvido usando ASP.NET. Esse projeto usa os conceitos de Routing, Model Binding, Model Validation, Filter Pipeline, Entity Framework, Swagger, Data filtering, Blazor WASM e outros conceitos.",
+            "tags": [
+                "ASP.NET",
+                "C#",
+                "Blazor"
+            ],
+            "url": "https://github.com/Lucas-Rodrigues-FIT/asp.net-firstProject",
+            "id": "4",
+            "type": "repo",
+            "image": "https://github.com/Lucas-Rodrigues-FIT/asp.net-firstProject/raw/main/readmeImages/image6.png",
+            "name": "Learning ASP.NET"
+        },
+        {
+            "id": "5",
+            "url": "https://blocksfall.io",
+            "description": "Blocks' Fall é um jogo com inspiração no Tetris, onde você pode jogar no PC ou Mobile: blocksfall.io. Este projeto está em desenvolvimento, e utilizo HTML, CSS, JavaScript para frontend e Node.JS com Express.JS para backend. Também utilizo os conceitos do Flexbox para o Design responsivo. E eu uso o Google Cloud com Cloud Run para hospedagem.",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Node.JS",
+                "Express.JS",
+                "Google Cloud"
+            ],
+            "type": "site",
+            "name": "Blocks' Fall",
+            "image": "https://storage.googleapis.com/lusrodrime/blocksfall.png"
+        },
+        {
             "tags": [
                 "HTML",
                 "CSS",
@@ -30,27 +79,30 @@
                 "Node.JS",
                 "Express.JS",
                 "PWA"
-            ]
+            ],
+            "description": "O Smart Hotel é uma aplicação em desenvolvimento usando HTML, CSS e JS para o front-end e Node.JS com Express.JS para o back-end. Ele usa o conceito de Progressive Web Apps onde o usuário pode baixar a aplicação no próprio dispositivo, como um aparelho Android ou Iphone. O próposito do serviço é ser um agregador de acomodações únicas e extraordinárias presentes ao redor do globo.",
+            "name": "Smart Hotel",
+            "image": "https://github.com/LuSrodri/PA-VII---Smart-Hotel/raw/main/fotos_README/img9.png",
+            "type": "repo",
+            "url": "https://github.com/LuSrodri/PA-VII---Smart-Hotel",
+            "id": "6"
         },
         {
-            "id": "3",
-            "name": "Learning React",
-            "description": "Este projeto foi realizado para aprender sobre React, Redux e os principais conceitos, como: Functional Components, Class Components, Conditional Render, Hooks, React Router, Context API, Direct Communication, Indirect Communication e etc.",
-            "type": "repo",
-            "url": "https://github.com/LuSrodri/Fundamentos-React",
-            "image": "https://github.com/LuSrodri/Fundamentos-React/raw/main/result.png",
             "tags": [
                 "HTML",
                 "CSS",
                 "JavaScript",
                 "React.JS"
-            ]
+            ],
+            "id": "7",
+            "name": "Learning React",
+            "url": "https://github.com/LuSrodri/Fundamentos-React",
+            "type": "repo",
+            "description": "Este projeto foi realizado para aprender sobre React, Redux e os principais conceitos, como: Functional Components, Class Components, Conditional Render, Hooks, React Router, Context API, Direct Communication, Indirect Communication e etc.",
+            "image": "https://github.com/LuSrodri/Fundamentos-React/raw/main/result.png"
         },
         {
-            "id": "4",
             "name": "Tetris Multiplayer",
-            "description": "Nosso projeto tem como principal objetivo o desenvolvimento de um jogo multiplayer web inspirado no famoso Tetris, onde até 4 jogadores podem jogar simultaneamente. Tetris é um jogo eletrônico super popular que permite aos jogadores girar blocos caindo estrategicamente para passar de nível enquanto ganha pontos.",
-            "type": "repo",
             "url": "https://github.com/LuSrodri/PA6-Facens-BlockGame",
             "image": "https://user-images.githubusercontent.com/70177919/139168074-ce9e0ad8-e503-4572-b2e2-4673796c3cf1.png",
             "tags": [
@@ -60,30 +112,28 @@
                 "Node.JS",
                 "Express.JS",
                 "WebSocket"
-            ]
+            ],
+            "id": "8",
+            "description": "Nosso projeto tem como principal objetivo o desenvolvimento de um jogo multiplayer web inspirado no famoso Tetris, onde até 4 jogadores podem jogar simultaneamente. Tetris é um jogo eletrônico super popular que permite aos jogadores girar blocos caindo estrategicamente para passar de nível enquanto ganha pontos.",
+            "type": "repo"
         },
         {
-            "id": "5",
-            "name": "Vue GoodMovies",
-            "description": "O projeto trata de um aplicativo para busca de filmes e séries. O projeto foi desenvolvido utilizando Vue, Vuex, Router e Axios. Este projeto foi muito importante para o aprendizado dessas ferramentas e framework.",
-            "type": "repo",
             "url": "https://github.com/LuSrodri/vue-vuex-router-axios",
             "image": "https://github.com/LuSrodri/vue-vuex-router-axios/raw/main/resultado-final1.png",
+            "description": "O projeto trata de um aplicativo para busca de filmes e séries. O projeto foi desenvolvido utilizando Vue, Vuex, Router e Axios. Este projeto foi muito importante para o aprendizado dessas ferramentas e framework.",
+            "id": "9",
             "tags": [
                 "HTML",
                 "CSS",
                 "JavaScript",
                 "Vue",
                 "Axios"
-            ]
+            ],
+            "name": "Vue GoodMovies",
+            "type": "repo"
         },
         {
-            "id": "6",
-            "name": "LuVendas",
-            "description": "Primeiro projeto fullstack realizado para o portfólio, utilizando Spring Boot/Java no backend, React no frontend e PostgreeSQL no banco de dados. A aplicação consiste em mostrar: a taxa de sucesso das vendas; quantidade de vendas por vendedores; e todas as vendas realizadas. O projeto foi realizado durante a 'semana Spring React' do DevSuperior.",
             "type": "repo",
-            "url": "https://github.com/LuSrodri/fullstack-React-Spring-LuVendas",
-            "image": "https://github.com/LuSrodri/fullstack-React-Spring-LuVendas/raw/main/finalResult.png",
             "tags": [
                 "HTML",
                 "CSS",
@@ -92,7 +142,12 @@
                 "Spring Boot",
                 "Java",
                 "PostgreeSQL"
-            ]
+            ],
+            "image": "https://github.com/LuSrodri/fullstack-React-Spring-LuVendas/raw/main/finalResult.png",
+            "url": "https://github.com/LuSrodri/fullstack-React-Spring-LuVendas",
+            "name": "LuVendas",
+            "description": "Primeiro projeto fullstack realizado para o portfólio, utilizando Spring Boot/Java no backend, React no frontend e PostgreeSQL no banco de dados. A aplicação consiste em mostrar: a taxa de sucesso das vendas; quantidade de vendas por vendedores; e todas as vendas realizadas. O projeto foi realizado durante a 'semana Spring React' do DevSuperior.",
+            "id": "10"
         }
     ]
 }

@@ -1,12 +1,15 @@
 const { initializeApp, applicationDefault } = require('firebase-admin/app');
-const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
+const { getFirestore } = require('firebase-admin/firestore');
 const data = require('./projects.json');
+require('dotenv').config();
 
+getProjectsFromDatabase();
 
-async function addProjectsToDatabase() {
+async function getProjectsFromDatabase() {
     try {
         initializeApp({
-            credential: applicationDefault()
+            credential: applicationDefault(),
+            databaseURL: 'https://lusrodri.firebaseio.com'
         });
         const db = getFirestore();
         const docRef = db.collection('lusrodri').doc(process.env.USER_DATABASE);
@@ -19,5 +22,3 @@ async function addProjectsToDatabase() {
         console.error("Occurred an error: ", e);
     }
 }
-
-module.exports = { addProjectsToDatabase };
