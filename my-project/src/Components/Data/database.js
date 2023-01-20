@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
-
 import data from './projects.json';
 
 const firebaseConfig = {
@@ -9,8 +8,7 @@ const firebaseConfig = {
     projectId: process.env.REACT_APP_PROJECTID || "",
     storageBucket: process.env.REACT_APP_STORAGEBUCKET || "",
     messagingSenderId: process.env.REACT_APP_MESSAGESENDERID || "",
-    appId: process.env.REACT_APP_APPID || "",
-    measurementId: process.env.REACT_APP_MEASUREMENTID || ""
+    appId: process.env.REACT_APP_APPID || ""
 };
 
 export async function getProjectsFromDatabase() {
