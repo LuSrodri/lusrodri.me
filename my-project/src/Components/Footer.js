@@ -6,7 +6,7 @@ import './Styles/Footer.css';
 export function Footer() {
     return (
         <div className="home divFooter">
-            <h5 className="text" style={{marginBottom: '0'}}><a href="https://github.com/LuSrodri/lusrodri.me">Clique aqui para acessar o repositório. <i class="bi bi-box-arrow-up-right"></i></a></h5>
+            <h5 className="text" style={{marginBottom: '0'}}><a href="https://github.com/LuSrodri/lusrodri.me">Clique aqui para acessar o repositório. <i className="bi bi-box-arrow-up-right"></i></a></h5>
             <hr className="horizontalLRow"></hr>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h5 className="text" >Siga-me nas redes sociais!</h5>
