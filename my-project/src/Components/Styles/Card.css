@@ -1,6 +1,6 @@
 
 .divCard {
-    width: 350px;
+    width: 300px;
     height: 400px;
     max-width: 80vw;
     max-height: 95vw;
@@ -27,9 +27,8 @@
 }
 
 .divCard h2, .divCard h5, .divCard p, .divCard h4 {
-    font-weight: bolder;
+    font-weight: 600;
     color: #1C3144;
-    text-transform: uppercase;
 }
 
 .divCard  p {
