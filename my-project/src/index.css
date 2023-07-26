@@ -81,3 +81,19 @@ hr.horizontalLRow {
 p.text {
   font-weight: 600;
 }
+
+img {
+  height: 155px;
+  animation: skeleton-loading-img 750ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes skeleton-loading-img {
+  0% {
+    background-color: #f2f2f280;
+  }
+  100% {
+    background-color: #f2f2f2;
+  }
+}
