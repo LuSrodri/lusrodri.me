@@ -87,6 +87,7 @@ export class Filter extends React.Component {
                 <button onClick={() => { this.onClearFilters() }} style={{ display: 'none' }} className="btn btn-info clear" id="clear"><h4 className="text"><i className="bi bi-x-circle"></i> Limpar</h4></button>
                 <button onClick={() => { this.onFilterType('site') }} className="btn btn-info" id="site"><h4 className="text">Websites</h4></button>
                 <button onClick={() => { this.onFilterType('repo') }} className="btn btn-info" id="repo"><h4 className="text">Repositórios</h4></button>
+                <button onClick={() => { this.onFilterType('api') }} className="btn btn-info" id="api"><h4 className="text">APIs</h4></button>
                 {this.state.selectedFilterTagsButton}
                 {this.state.filterTagsButton}
             </div>

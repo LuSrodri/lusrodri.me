@@ -1,36 +1,40 @@
 
 .divCard {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: auto;
     max-width: 80vw;
     max-height: 95vw;
-    background-color: #EF626C;
-    border: 6px solid #1C3144;
-    border-radius: 25px;
+    background-color: #FFF;
+    border-radius: 15px;
     margin: 2vmin;
-    padding-top: 2vmin;
     transition: 150ms;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 2px 2px 10px #888;
 }
 
 .divCard:hover {
     cursor: pointer;
-    box-shadow: 1vmin 1vmin #6daedb;
+    box-shadow: 2px 2px 10px #888;
 }
 
 .divCard  img {
     width: 100%;
-    margin-bottom: 3vmin;
+    height: auto;
 }
 
-.divCard h2, .divCard h5, .divCard p, .divCard h4 {
-    font-weight: 600;
-    color: #1C3144;
+.divCard h4 {
+    font-weight: 400;
+    margin: 5px;
+    font-size: 2vmin;
+    text-align: start;
 }
 
 .divCard  p {
-    width: 100%;
+    width: calc(100%-30px);
+    text-align: start;
+    margin: 15px;
+    word-break: break-all;
 }

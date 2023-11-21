@@ -103,11 +103,11 @@ div.divDialogModal .info {
     width: 100%;
     padding: 2vmin;
     background-color: #1C3144;
-    color: #EF626C;
+    color: #F3D8C7;
 }
 
 .divDialogModal p {
-    text-align: justify;
+    text-align: start;
     font-size: 1.1rem;
     width: 80%;
 }
@@ -115,7 +115,7 @@ div.divDialogModal .info {
 .divDialogModal p.tags {
     text-align: start;
     font-size: 0.9rem;
-    color: #6DAEDB;
+    color: #1C3144;
 }
 
 .divDialogModal .buttons {

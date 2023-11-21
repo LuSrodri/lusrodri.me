@@ -2,7 +2,7 @@
 div.divFilters {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 90%;
     flex-wrap: wrap;
@@ -17,17 +17,17 @@ div.divFilters button {
 }
 
 div.divFilters button.btn.btn-info {
-    background-color: #2892D7;
-    border: 0.3vmin solid #6daedb;
+    background-color: #405DE6;
+    border: 0.3vmin solid #405DE6;
 }
 
 div.divFilters button.btn.btn-info:hover {
-    background-color: #6daedb;
+    background-color: #5B51D8;
 }
 
 div.divFilters button.btn.btn-info:active {
-    background-color: #2892D7;
-    border: 0.3vmin solid #2892D7;
+    background-color: #E1306C;
+    border: 0.3vmin solid #E1306C;
 }
 
 div.divFilters button.btn.btn-info.clear {
@@ -44,17 +44,17 @@ div.divFilters button.btn.btn-info.clear:active {
 }
 
 div.divFilters button.btn.btn-info.clicked {
-    background-color: #EF626C;
-    border: 0.3vmin solid #EF626C80;
+    background-color: #E1306C;
+    border: 0.3vmin solid #E1306C;
 }
 
 div.divFilters button.btn.btn-info.clicked:hover {
-    background-color: #EF626C80;
+    background-color: #F56040;
 }
 
 div.divFilters button.btn.btn-info.clicked:active {
-    background-color: #EF626C;
-    border: 0.3vmin solid #EF626C;
+    background-color: #E1306C;
+    border: 0.3vmin solid #E1306C;
 }
 
 div.divFilters h4.text {

@@ -18,8 +18,10 @@ export class Dialog extends React.Component {
 
         if (this.props.type === 'WebSite')
             this.state.type = 'Website';
-        else
+        else if (this.props.type === 'Repositório')
             this.state.type = 'Repositório';
+        else
+            this.state.type = 'API';
     }
 
     closeModal(e) {

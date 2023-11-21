@@ -122,10 +122,8 @@ export class Projects extends React.Component {
         const selectedFilterTags = this.state.selectedFilterTags;
         return (
             <div className="home divProjects">
-                <p className="text">Olá 👋 Eu sou Lucas Santos Rodrigues. <br></br> Desenvolvedor Full Stack com foco em desenvolvimento WEB.</p>
-                <p className="text">Tenho conhecimento em diversas tecnologias e ferramentas como o <strong>Next.js, React.js, Node.js, Python, Flask, ASP.NET, Blazor, GIT, GCP e Firebase.</strong> </p>
-                <p className="text">Abaixo você encontra os principais projetos que já atuei ou que ainda atuo.</p>
-                
+                <h2>Veja alguns dos mais incríveis projetos que já participei</h2>
+
                 <Filter
                     filterTags={filterTags}
                     onFilterTagsChange={this.handleFilterTagsChange}

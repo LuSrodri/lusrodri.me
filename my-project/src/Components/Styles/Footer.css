@@ -1,8 +1,21 @@
 
 .divFooter {
-    background-color: #1C3144;
-    color: #F3D8C7;
-    padding: 2vmin;
-    border-top: 1vmin solid #EF626C;
+    background-color: #F3D8C7;
+    padding: 8vmin;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divFooter h2 {
+    text-align: start;
+    font-weight: 400;
+}
+
+.divFooter p strong {
+    color: #405DE6;
 }

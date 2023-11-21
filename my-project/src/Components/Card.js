@@ -36,12 +36,9 @@ export class Card extends React.Component {
         if (this.props.img === '')
             return (
                 <>
-                    <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
-                        <div>
-                            <h2>{this.props.title}</h2>
-                            <p>{this.state.tagsElement}</p>
-                        </div>
-                        <h4>Clique e veja mais sobre esse {this.state.type}!</h4>
+                    <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)} style={{justifyContent: "space-evenly"}}>
+                        <h4><strong>@</strong> {this.props.title}</h4>
+                        <p><strong>Tecnologias</strong> {this.state.tagsElement}</p>
                     </div>
                     <Dialog
                         id={this.props.id + 'Dialog'}
@@ -58,11 +55,9 @@ export class Card extends React.Component {
             return (
                 <>
                     <div id={this.props.id} className="divCard" onClick={(e) => this.openDialog(e)}>
+                        <h4><strong>@</strong> {this.props.title}</h4>
                         <img src={this.props.img} alt="" />
-                        <div>
-                            <h2>{this.props.title}</h2>
-                            <p>{this.state.tagsElement}</p>
-                        </div>
+                        <p><strong>Tecnologias</strong> {this.state.tagsElement}</p>
                     </div>
                     <Dialog
                         id={this.props.id + 'Dialog'}
