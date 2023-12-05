@@ -4,7 +4,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif !important;
   height: 100vh;
-  background-color: #F3D8C7 !important;
 }
 
 dialog {
@@ -26,7 +25,7 @@ h1.title {
 
 h4.text,
 h5.text {
-  color: #F3D8C7;
+  color: #FFF;
   text-transform: none;
 }
 
@@ -60,7 +59,7 @@ a.icon:hover {
 
 hr.horizontalLRow {
   width: 75%;
-  border-top: 0.5vmin solid #F3D8C7;
+  border-top: 0.5vmin solid #FFF;
   opacity: unset;
 }
 
