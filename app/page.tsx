@@ -4,7 +4,7 @@ const projects = [
   {
     name: "Logus Desenvolvimento",
     url: "https://logus.cloud",
-    description: "Infraestrutura em nuvem simplificada para desenvolvedores.",
+    description: "Criando e otimizando sites para profissionais e empresas de alta performance.",
   },
   {
     name: "educando.app",
