@@ -16,6 +16,11 @@ const projects = [
     url: "https://ihatebackground.com",
     description: "Remova fundos de imagens em segundos com IA.",
   },
+  {
+    name: "Goodbye Watermark",
+    url: "https://goodbyewatermark.com",
+    description: "Remova marcas d'água de imagens facilmente usando inteligência artificial.",
+  },
 ];
 
 const games = [
@@ -239,7 +244,7 @@ export default function Home() {
               Games
             </h2>
             <p className="text-eerie/50 mb-12 opacity-0 animate-fade-in delay-100">
-              Projetos interativos e divertidos.
+              Projetos interativos, educacionais e divertidos.
             </p>
 
             <div className="grid gap-6 md:grid-cols-2">
