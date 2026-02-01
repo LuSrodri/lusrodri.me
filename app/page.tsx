@@ -23,14 +23,6 @@ const projects = [
   },
 ];
 
-const games = [
-  {
-    name: "Check Before Click",
-    url: "https://checkbefore.click",
-    description: "Treine o seu raciocínio lógico e tempo de reação identificando cores em sequência em tempo real.",
-  },
-];
-
 const socials = [
   {
     name: "X",
@@ -108,40 +100,6 @@ function ProjectCard({
           <ArrowIcon />
         </div>
         <p className="text-eerie/60 leading-relaxed">{project.description}</p>
-      </div>
-    </a>
-  );
-}
-
-function GameCard({
-  game,
-  index,
-}: {
-  game: (typeof games)[0];
-  index: number;
-}) {
-  return (
-    <a
-      href={game.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group project-card relative overflow-hidden rounded-2xl p-8 glass opacity-0 animate-fade-in-up"
-      style={{ animationDelay: `${0.2 + index * 0.1}s` }}
-    >
-      <div className="absolute inset-0 bg-tufts opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
-      <div className="relative z-10">
-        <div className="flex items-center gap-3 mb-4">
-          <span className="px-3 py-1 text-xs font-medium bg-tufts/10 text-tufts rounded-full">
-            Game
-          </span>
-        </div>
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-xl font-semibold text-cool group-hover:text-tufts transition-colors duration-300">
-            {game.name}
-          </h3>
-          <ArrowIcon />
-        </div>
-        <p className="text-eerie/60 leading-relaxed">{game.description}</p>
       </div>
     </a>
   );
@@ -233,23 +191,6 @@ export default function Home() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
                 <ProjectCard key={project.name} project={project} index={index} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="games" className="px-6 py-24">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-cool mb-4 opacity-0 animate-fade-in">
-              Games
-            </h2>
-            <p className="text-eerie/50 mb-12 opacity-0 animate-fade-in delay-100">
-              Projetos interativos, educacionais e divertidos.
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {games.map((game, index) => (
-                <GameCard key={game.name} game={game} index={index} />
               ))}
             </div>
           </div>
