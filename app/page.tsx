@@ -1,28 +1,5 @@
 import Image from "next/image";
 
-const projects = [
-  {
-    name: "Logus Desenvolvimento",
-    url: "https://logus.cloud",
-    description: "Criando e otimizando sites para profissionais e empresas de alta performance.",
-  },
-  {
-    name: "educando.app",
-    url: "https://educando.app",
-    description: "Plataforma de aprendizado interativo e personalizado.",
-  },
-  {
-    name: "I Hate Background",
-    url: "https://ihatebackground.com",
-    description: "Remova fundos de imagens em segundos com IA.",
-  },
-  {
-    name: "Goodbye Watermark",
-    url: "https://goodbyewatermark.com",
-    description: "Remova marcas d'água de imagens facilmente usando inteligência artificial.",
-  },
-];
-
 const socials = [
   {
     name: "X",
@@ -61,49 +38,6 @@ const socials = [
     ),
   },
 ];
-
-function ArrowIcon() {
-  return (
-    <svg
-      className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-    </svg>
-  );
-}
-
-function ProjectCard({
-  project,
-  index,
-}: {
-  project: (typeof projects)[0];
-  index: number;
-}) {
-  return (
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group project-card relative overflow-hidden rounded-2xl p-8 glass opacity-0 animate-fade-in-up"
-      style={{ animationDelay: `${0.2 + index * 0.1}s` }}
-    >
-      <div className="absolute inset-0 bg-tufts opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
-      <div className="relative z-10">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-xl font-semibold text-cool group-hover:text-tufts transition-colors duration-300">
-            {project.name}
-          </h3>
-          <ArrowIcon />
-        </div>
-        <p className="text-eerie/60 leading-relaxed">{project.description}</p>
-      </div>
-    </a>
-  );
-}
 
 export default function Home() {
   return (
@@ -155,44 +89,6 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-16 opacity-0 animate-fade-in delay-500">
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-2 text-sm text-eerie/40 hover:text-tufts transition-colors duration-300"
-              >
-                <span>Ver projetos</span>
-                <svg
-                  className="w-4 h-4 animate-bounce"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" className="px-6 py-24">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-cool mb-4 opacity-0 animate-fade-in">
-              Projetos
-            </h2>
-            <p className="text-eerie/50 mb-12 opacity-0 animate-fade-in delay-100">
-              Algumas das coisas que construi.
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {projects.map((project, index) => (
-                <ProjectCard key={project.name} project={project} index={index} />
-              ))}
-            </div>
           </div>
         </section>
 

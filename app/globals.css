@@ -171,16 +171,6 @@ body {
   border: 1px solid rgba(147, 191, 239, 0.3);
 }
 
-/* Project card hover */
-.project-card {
-  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(70, 139, 230, 0.12);
-}
-
 /* Link underline animation */
 .link-underline {
   position: relative;
