@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Lucas Rodrigues",
   },
   description:
-    "Engenheiro de Software fascinado por tecnologias. Criador de logus.cloud, educando.app, ihatebackground.com e checkbefore.click.",
+    "Engenheiro de Software fascinado por tecnologias.",
   keywords: [
     "Lucas Rodrigues",
     "Engenheiro de Software",
@@ -24,10 +25,6 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "TypeScript",
-    "logus.cloud",
-    "educando.app",
-    "ihatebackground.com",
-    "checkbefore.click",
   ],
   authors: [{ name: "Lucas Rodrigues", url: "https://lusrodri.me" }],
   creator: "Lucas Rodrigues",
@@ -50,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Lucas Rodrigues",
     title: "Lucas Rodrigues | Engenheiro de Software",
     description:
-      "Engenheiro de Software fascinado por tecnologias. Criador de logus.cloud, educando.app, ihatebackground.com e checkbefore.click.",
+      "Engenheiro de Software fascinado por tecnologias.",
     images: [
       {
         url: "/lusrodri-logo.png",
@@ -66,7 +63,7 @@ export const metadata: Metadata = {
     creator: "@lusrodri",
     title: "Lucas Rodrigues | Engenheiro de Software",
     description:
-      "Engenheiro de Software fascinado por tecnologias. Criador de logus.cloud, educando.app, ihatebackground.com e checkbefore.click.",
+      "Engenheiro de Software fascinado por tecnologias.",
     images: ["/lusrodri-logo.png"],
   },
   alternates: {
@@ -93,7 +90,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#E9F5FF" />
         <meta name="format-detection" content="telephone=no" />
       </head>
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
